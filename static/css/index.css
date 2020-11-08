@@ -2,7 +2,8 @@
 
 body {
   font-family: helvetica, arial, sans-serif;
-  background-color:black;
+  background-image: url("https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=805");
+  
 }
  html,
       body {
@@ -12,19 +13,19 @@ body {
         padding: 0;
       }
 .headding {
+  
+  background: #654ea3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  background-image: linear-gradient(to bottom right, red, gold);
   font-size: 35px;
   padding:5px;
   color: white;
   height: 40px;
   width:100%;
   text-align: center;
-
+  
 }
-
-
-
 
 
   color:white;
@@ -41,13 +42,16 @@ h2 {
   max-height:auto;
   box-sizing:border-box;
   position: relative;
-  background: linear-gradient(to right, red, gold);
+  background: #654ea3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: 5px;
   text-align:center;
   display:inline-block;
   border-radius:10px;
-
-
+  
+  
 }
 .b{
   background: #222;
@@ -62,9 +66,10 @@ h2 {
   text-align:center;
   text-decoration:none;
   border-radius:50%;
-  font-size: 16px;
+  font-size: 12px;
   align:center;
   margin-top:5px;
+  display:inline;
 }
 .button:hover {
   background-color: #008080;
@@ -74,20 +79,50 @@ h2 {
 #box{
   margin: 0;
   position:absolute;
- top: 28%;
+ top: 38%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-#btn{
-  margin: 0;
-  position: absolute;
-  top: 48%;
-  left:50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+
 h3{
   color:#48D1CC;
 }
 
+btn{
+	background-color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 50%;
+  display:inline;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 700;
+  margin: 0; 
+  
+}
+
+.stop{
+	color: #E00;
+}
+
+#continue, .stop, #start{
+	display: none;
+}
+
+
+#seconds{
+	width: 250px;
+	background: none;
+	outline: none;
+	border: none;
+	border-bottom: 4px solid #fff;
+	padding: 1rem;
+	font-size: 2rem;
+	color: white;
+}
+
+#seconds::placeholder{
+	color: #ddd;
+}

@@ -6,35 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Hello!</title>
-
+    
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="static/css/index.css">
-
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+    
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
+    <script src="/static/scripts/index.js" defer></script>
+  </head>  
   <body>
-
+    
+   
   <header class="headding" >
-   <b> APP NAME</b>
+    <b> COUNTIMER</b>
+     <!--<a href="timer.html">Visit W3Schools.com!</a>--> 
    </header>
-  <div id="main">
+  
  <div id="box">
     <div class="a"><div class="b">
         <h2>TIMER</h2>
-        <h3 contentEditable="true">TASK NAME</h3>
-      </div ></div></div>
-  <div id="btn">
-      <button class="button">play</button>
-      <button class="button">pause</button>
-      <button class="button">reset</button>
+     <div class="content">
+    	<div class="counter"></div>
+    	<input id="seconds" type="number" placeholder="Minutes...">
+    	<div class="buttons">
+    		<button class="btn start" id="start" value="1" onclick="check(this)">Start</button>
+    		<button class="btn start" id="continue" value="1" onclick="check(this)">Continue</button>
+    		<button class="btn stop" id="pause" value="2" onclick="check(this)">pause</button>
+        <button class="btn stop" id="stop" value="0" onclick="check(this)">Stop</button>
+    		<button class="btn start" id="submit" onclick="subm()">Submit</button>
+        <button class="btn start" id="rese" onclick="rese()">Reset</button>
+    	</div>
+    <script type="text/javascript" src="script.js"></script>
   </div>
+      <h3 contenteditable="true" placeholder="Minutes..." style="border:2px solid blue;background-color:#A9A9A9;color:purple">TASK NAME HERE</h3>
+      </div>
    </div>
+    </div>
 
+            
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
+   
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="static/scripts/index.js" defer></script>
+    <script src="https://button.glitch.me/script.js" defer></script>
   </body>
 </html>
